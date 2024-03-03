@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Chaves</title>
+    <link rel="stylesheet" href="chaves.css">
+</head>
+<body>
+
+    <header>
+      <div class="container-header">
+        <h1>Portal de Chaves</h1>
+        <img src="chave.png" alt="chave">
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <fieldset>
+                <legend>Cadastro de Armário</legend>
+                <form id="armarioForm">
+                    <label for="usuario">Colaborador:</label>
+                    <input type="text" id="usuario" name="usuario" required placeholder="Nome do colaborador">
+
+                    <label for="numeroArmario">Número do Armário:</label>
+                    <input type="number" id="numeroArmario" name="numeroArmario" required>
+
+                    <label for="campoSetor">Setor:</label>
+                    <select id="campoSetor" name="campoSetor" required>
+                      <option value="" disabled selected>---Selecione----</option>
+                      <option>CPD</option>
+                      <option>Frente de caixa</option>
+                      <option>Hortifruti</option>
+                      <option>Prevenção</option>
+                      <option>Frios</option>
+                      <option>Loja</option>
+                      <option>Promotores</option>
+                      <option>Outros</option>
+                    </select>
+                  <button class="caduser" type="submit">Cadastrar</button>
+                  <button class="salvar-btn" style="display: none;">Salvar</button>
+                  <button class="limpar-btn" style="display: none;">Limpar</button>
+
+                </form>
+            </fieldset>
+        </section>
+
+        <section>
+            <h2>Lista de Armários</h2>
+            <input type="text" id="pesquisaArmarios" placeholder="Pesquisar Armários">
+            <ul id="listaArmarios">
+                
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Desenvolvido por CPD</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

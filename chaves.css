@@ -1,0 +1,129 @@
+@charset"UTF-8";
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.container-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+div > img{
+  width: 40px;
+  color: white;
+}
+h1{
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+header, footer {
+    background-color:#268656;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+fieldset{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+button.caduser  {
+    width: 200px;
+
+    background-color: #268656;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    transition: 0.5s;
+
+
+}
+button.caduser:hover {
+    background-color: #94c158;
+    border-radius: 20px;
+}
+button.salvar-btn{
+    display: inline-block;
+    width: 200px;
+    background-color: #268656;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    transition: 0.5s;
+
+}
+.salvar-btn:hover{
+  background-color: #3568d0;
+  border-radius: 20px;
+}
+button.limpar-btn{
+    display:flex;
+    width: 200px;
+    background-color: #c2001d;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase; 
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    transition: 0.5s;
+
+}
+.limpar-btn:hover{
+  background-color: #ff3347;
+  border-radius: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background-color: #d9534f; /* Vermelho para excluir */
+    color: #fff;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+li button.editar {
+    background-color: #5bc0de; /* Azul para editar */
+}
